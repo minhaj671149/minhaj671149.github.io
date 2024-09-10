@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskCanvas - Weekly Calendar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="Poppins-Bold.ttf">
+    <link href="Poppins-Regular.ttf">
 </head>
 <body>
     <header>
         <h1>TaskCanvas</h1>
-        <nav>
-            <a href="index.html" class="transition-link">Tasks</a>
-            <a href="calendar.html" class="transition-link">Weekly Calendar</a>
-            <a href="pomodoro.html" class="transition-link">Pomodoro Timer</a>
-        </nav>
     </header>
 
     <main class="transition-content">
@@ -35,6 +31,20 @@
             <div class="calendar-day" id="sunday">Sunday</div>
         </section>
     </main>
+
+    <footer>
+       <nav>
+            <a href="index.html" class="nav-item" class="transition-link">
+        <i class="fas fa-tasks"></i>
+    </a>
+    <a href="calendar.html" class="nav-item" class="transition-link">
+        <i class="fas fa-calendar-alt"></i>
+    </a>
+    <a href="pomodoro.html" class="nav-item" class="transition-link">
+        <i class="fas fa-stopwatch"></i>
+    </a>
+       </nav>
+    </footer>
 
     <script src="calendar.js"></script>
 </body>

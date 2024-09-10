@@ -48,11 +48,9 @@ function switchTimers() {
     if (isFocusTime) {
         remainingTime = getBreakTime();
         isFocusTime = false;
-        alert('Time for a break!');
     } else {
         remainingTime = getFocusTime();
         isFocusTime = true;
-        alert('Back to work!');
     }
     updateDisplay();
 }
@@ -117,3 +115,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+function playAlarm() {
+    alarmSound.currentTime = 0;
+    alarmSound.play().catch(error => {
+        console.error('Audio playback failed:', error);
+    });
+
+    // If running in an Android WebView, trigger notification
+    if (window.AndroidNotification) {
+        window.AndroidNotification.sendNotification("Time is up!");
+    }
+}
