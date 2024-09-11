@@ -74,6 +74,16 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
+.advert {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: 600;
